@@ -1,4 +1,4 @@
-# Start with a lightweight base image
+# Start with a lightweight base image 
 FROM debian:bullseye
 
 # Set the working directory
@@ -15,7 +15,7 @@ COPY index.html .
 COPY stats.js .
 
 # Expose the port Nginx will listen on
-EXPOSE 80
+EXPOSE 5000
 
 # Start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
